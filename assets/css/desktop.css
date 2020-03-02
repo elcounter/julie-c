@@ -86,7 +86,6 @@
 
     /* home */
     section.home{
-        background-color: snow;
         padding-bottom: 200px;
     }
     .home > article{
@@ -172,7 +171,6 @@
 
     /* team */
     section.team{
-        background-color: snow;
         padding-bottom: 200px;
     }
 
