@@ -1,0 +1,230 @@
+/* ----- smartphonoe ----- */
+@media screen and (max-width: 980px){
+
+    /* ----- all ----- */
+    section{
+        width: 100%;
+        height: auto;
+        padding-top: 10px;
+    }
+    section > h2{
+        text-align: center;
+        font-size: 32px;
+        padding: 1rem;
+    }
+    section > p{
+        text-align: justify;
+        width: 90%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    /* ----- nav ----- */
+    
+    nav{
+        position: relative;
+    }
+
+    nav > h1{
+        width: 90%;
+    }
+    
+    nav > ul{
+        position: fixed;
+        background-color: #FCF3F2;
+        height: 60vh;
+        z-index: 8;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -30%);
+        -webkit-clip-path: circle(100px at 90% -30%);
+        transition: all 1s ease-out;
+    }
+
+    nav > ul > li > a{
+        font-size: 30px;
+    }
+
+    nav > ul > li > a::after{
+        content: '';
+        width: 0;
+        height: 0;
+    }
+    
+    nav > .burger{
+        outline: none;
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translate(-5%, -50%);
+        z-index: 9;
+    }    
+
+    nav > .burger > div{
+        width: 30px;
+        height: 3px;
+        margin: 5px;
+        background-color: #222;
+        transition: all .5s ease-out;
+    }
+
+    nav > ul.open{
+        clip-path: circle(900px at 90% 10%);
+        -webkit-clip-path: circle(900px at 90% 10%);
+    }
+
+    nav > .burger > div.line1.toggle{
+        transform: rotate(-45deg) translate(-5px, 6px)
+    }
+    nav > .burger > div.line2.toggle{
+        opacity: 0
+    }
+    nav > .burger > div.line3.toggle{
+        transform: rotate(45deg) translate(-5px, -6px)
+    }
+    
+    /* ----- sections ----- */
+
+
+
+    /* home */
+    .home > article > figure{
+        width: 100%;
+    }
+    .home > article > figure > img{
+        width: 100%;
+        display: block;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .home > article > p{
+        text-align: justify;
+        width: 90%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+
+
+    /* about */
+    section.about{
+        height: auto;
+    }
+    section.about > article{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 130px;
+    }
+    section.about > article > .card{
+        width: 90%;
+        padding: 1rem;
+        border-radius: 20px;
+        margin: 20px;
+        color: #222;
+        background: #FCF3F2;
+    }
+    section.about > article > .card > h3{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 70px;
+        margin-top: 50px;
+    }
+    section.about > article > .card > p{
+        text-align: justify;
+        margin-bottom: 70px;
+        margin-top: 50px;
+        padding: 1rem;
+    }
+    
+    section.about > article > .card > .details{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section.about > article > .card > .details > span{
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    section.about > article > .card > figure{
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+
+
+
+
+    /* contact */
+    section.contact{
+        padding-bottom: 100px;
+    }
+    .contact > a{
+        background: #222;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.4);
+        color: snow;
+        display: block;
+        height: 100px;
+        line-height: 100px;
+        margin: 5rem auto;
+        text-align: center;
+        text-transform: uppercase;
+        transition: .7s;
+        width: 200px;
+    }
+    .contact > p{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /* ----- footer ----- */
+    
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: #222;
+        text-align: center;
+        position: relative;
+    }
+    footer > p{
+        text-transform: capitalize;
+        color: snow;
+        padding-top: 15px;
+    }
+    footer > a > p{
+        text-transform: capitalize;
+        color: snow;
+    }
+    footer > a > i{
+        font-size: 24px;
+        color: white;
+        margin-left: 50px;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+    }
+    footer > ul{
+        display: flex;
+        justify-content: center;
+    }
+    footer > ul > li{
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    footer > ul > li > a{
+        margin-right: 15px;
+        font-size: 24px;
+        color: snow;
+        transition: .7s;
+    }
+
+}

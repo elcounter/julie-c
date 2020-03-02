@@ -1,0 +1,229 @@
+/* ------- tablette ------ */
+@media screen and (max-width: 1200px){
+
+    /* ----- all ----- */
+
+    section{
+        width: 100%;
+        height: auto;
+        padding: 100px 0 100px 0;
+    }
+    section > h2{
+        text-align: center;
+        font-size: 32px;
+        padding: 1rem;
+    }
+    section > p{
+        text-align: justify;
+        width: 70%;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    /* ----- nav ----- */
+    
+    nav{
+        width: 100%;
+        height: 10vh;
+        background-color:#FCF3F2;
+        position: relative;
+        display: flex;
+    }
+    
+    nav > h1{
+        width: 20%;
+        text-align: center;
+        line-height: 10vh;
+        font-family: 'Parisienne';
+        font-size: 48px;
+    }
+
+    nav > ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav > ul > li > a{
+        font-size: 20px;   
+        letter-spacing: 5px;   
+        text-decoration: none;    
+        text-transform: uppercase;    
+        color: #222;    
+        position: relative;
+        transition: .7s;
+    }
+    
+    nav > ul > li > a::after{
+        content: '';
+        background-color: #222;
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: -8px auto;
+        transition: .7s ease-in-out;
+    }
+    
+    nav > ul > li > a:hover:after{
+        width: 100%;
+    } 
+    
+    nav > .burger{   
+        display: none;   
+    }   
+
+    /* ----- sections ----- */
+
+    /* home */
+
+    section.home{
+        height: auto;
+    }
+
+    .home > article > figure{
+        width: 100%;
+    }
+    .home > article > figure > img{
+        width: 500px;
+        display: block;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    .home > article > p{
+        text-align: justify;
+        width: 50%;
+        margin: auto;
+        padding: 5rem;
+    }
+
+    
+    /* about */
+    
+    section.about{
+        height: auto;
+    }
+    section.about > article{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-bottom: 130px;
+    }
+    section.about > article > .card{
+        width: 50%;
+        padding: 1rem;
+        border-radius: 20px;
+        margin: 20px;
+        color: #222;
+        background: #FCF3F2;
+    }
+    section.about > article > .card > h3{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 70px;
+        margin-top: 50px;
+    }
+    section.about > article > .card > p{
+        text-align: justify;
+        margin-bottom: 70px;
+        margin-top: 50px;
+        padding: 1rem;
+    }
+        
+    section.about > article > .card > .details{
+        display: flex;
+        justify-content: space-between;
+    }
+    section.about > article > .card > .details > span{
+        font-weight: bold;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    section.about > article > .card > figure{
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+
+
+    section.team{
+        height: auto;
+    }
+
+    /* contact */
+    section.contact{
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .contact > a{
+        background: #222;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.4);
+        color: snow;
+        display: block;
+        height: 100px;
+        line-height: 100px;
+        margin: 5rem auto;
+        text-align: center;
+        text-transform: uppercase;
+        transition: .7s;
+        width: 200px;
+    }
+
+    .contact > p{
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    /* ----- footer ----- */
+
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: #222;
+        text-align: center;
+        position: relative;
+    }
+    footer > p{
+        text-transform: capitalize;
+        color: snow;
+        padding-top: 15px;
+    }
+    footer > a > p{
+        text-transform: capitalize;
+        color: snow;
+    }
+    footer > a > i{
+        font-size: 24px;
+        color: white;
+        margin-left: 50px;
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+    }
+    footer > ul{
+        display: flex;
+        justify-content: center;
+    }
+    footer > ul > li{
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    footer > ul > li > a{
+        margin-right: 15px;
+        font-size: 24px;
+        color: snow;
+        transition: .7s;
+    }
+
+}
